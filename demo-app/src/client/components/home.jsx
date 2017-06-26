@@ -2,7 +2,9 @@ import React from "react";
 import { connect } from "react-redux";
 import { IntlProvider } from "react-intl";
 
-import {OssComponent} from "oss-component";
+import {Demo} from "../../../../demo/demo.jsx";
+
+console.log("xxxxxx", Demo);
 
 const locale = "en";
 
@@ -12,7 +14,7 @@ export class Home extends React.Component {
       <IntlProvider locale={locale}>
         <div>
           <p>Some content in same parent div as</p>
-        <OssComponent />
+          <Demo />
       </div>
       </IntlProvider>
     );
