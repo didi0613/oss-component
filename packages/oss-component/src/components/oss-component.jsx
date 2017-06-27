@@ -1,4 +1,5 @@
 import React from "react";
+import propTypes from "prop-types";
 import { FormattedMessage } from "react-intl";
 
 import styles from "../../src/styles/oss-component.css";

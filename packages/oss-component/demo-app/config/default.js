@@ -19,17 +19,14 @@ module.exports = {
         "pathPrefix": "dist"
       }
     },
-    "../demo-app/src/server/webapp": {
+    "webapp": {
+      "module": "electrode-react-webapp/lib/hapi",
       "options": {
-        "pageTitle": "Electrode Explorer",
-        "devServer": {
-          "port": "2992"
-        },
+        "pageTitle": "demo-app",
         "paths": {
           "/{args*}": {
-            "view": "index",
             "content": {
-              "module": "../demo-app/{{env.APP_SRC_DIR}}server/views/index-view"
+              "module": "./{{env.APP_SRC_DIR}}/server/views/index-view"
             }
           }
         }

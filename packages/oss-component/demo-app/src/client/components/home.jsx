@@ -2,7 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { IntlProvider } from "react-intl";
 
-import Demo from "../../../../packages/oss-component/demo/demo";
+import Demo from "../../../../demo/demo.jsx";
 
 const locale = "en";
 
