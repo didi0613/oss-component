@@ -12,5 +12,5 @@ support.load()
   .then(() => {
     const config = electrodeConfippet.config;
 
-    require("electrode-server")(config, [staticPathsDecor()]);  // eslint-disable-line
+    return require("electrode-server")(config, [staticPathsDecor()]);  // eslint-disable-line
   });

@@ -19,7 +19,8 @@ module.exports = {
         "pathPrefix": "dist"
       }
     },
-    "../demo-app/src/server/webapp": {
+    "webapp": {
+      "module": "../demo-app/src/server/webapp",
       "options": {
         "pageTitle": "Electrode Explorer",
         "devServer": {
@@ -28,11 +29,12 @@ module.exports = {
         "paths": {
           "/{args*}": {
             "view": "index",
-            "content": {
-              "module": "../demo-app/{{env.APP_SRC_DIR}}server/views/index-view"
+            "content": () => {
+              return "";
             }
           }
-        }
+        },
+        "serverSideRendering": false
       }
     }
   },
