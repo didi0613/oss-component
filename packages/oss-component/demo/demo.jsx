@@ -1,5 +1,7 @@
 import React from "react";
 import Demo from "electrode-demo-index";
+import Playground from "component-playground";
+import OssComponent from "../src/components/oss-component";
 import { addLocaleData, IntlProvider } from 'react-intl';
 
 import * as libraryScope from "../src/index";
@@ -12,7 +14,6 @@ addLocaleData(localeData);
 
 const components = [
   {
-    title: "Component Title",
     examples: [
       {
         type: "playground",
@@ -22,8 +23,9 @@ const components = [
     ]
   } // any additional components here
 ];
-const localScope = {IntlProvider, messages, locale};
+var componentExample = require("raw-loader!./examples/oss-component.example");
 
-const demo = () => <Demo libraryScope={libraryScope} components={components} />;
+const localScope = {IntlProvider, messages, locale};
+const demo = () => <Demo collapsableCode={true} scope={localScope} libraryScope={libraryScope} components={components} />;
 
 export default demo;

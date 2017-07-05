@@ -47,6 +47,7 @@
   },
   "devDependencies": {
     "electrode-archetype-react-app-dev": "^3.0.0",
+    "webpack-bundle-analyzer": "^2.8.2",
     "xclap": "^0.2.0"
   },
   "private": true
