@@ -11,4 +11,5 @@
 .someStyle {
   composes: baseStyle;
   font-size: 18px;
+  margin-top: 10px;
 }
