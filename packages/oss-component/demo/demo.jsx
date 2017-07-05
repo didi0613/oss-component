@@ -26,7 +26,6 @@ const components = [
 const localScope = {IntlProvider, messages, locale};
 const demo = () => (
   <Demo
-    collapsableCode={true}
     scope={localScope}
     libraryScope={libraryScope}
     components={components}
